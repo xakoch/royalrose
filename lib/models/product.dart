@@ -7,7 +7,7 @@ class Product {
   Product({
     required this.title,
     this.price = 0,
-    this.description = 'Мясо ,баклажан, черри, рукола , чили соус',
+    required this.description,
     required this.imageFile,
   });
 }

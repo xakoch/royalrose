@@ -125,15 +125,15 @@ class MenyuPage2 extends StatelessWidget {
 
   Widget categoryTitle(CategoryProducts category) {
     String subtitle = '';
-    if (category.types == 0 && category.portions == 0) {
+    
+    if (category.types == 0) {
       subtitle = '';
-    } else if (category.types == 0) {
-      subtitle = '${category.portions} порции';
-    } else if (category.portions == 0) {
-      subtitle = '${category.types} вида';
-    } else {
+    } else if (category.types == 1) {
+      subtitle = '(1 на выбор)';
+    } else if (category.types == 99) {
+      subtitle = '(без ограничений)';
+    } else if (category.types == 3) {
       subtitle = '(на выбор 3 вида по две порции)';
-      // subtitle = '${category.types} вида по ${category.portions} порции';
     }
 
     return Container(
