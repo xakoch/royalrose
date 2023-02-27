@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:retoran_app/models/product.dart';
+
+import '../../models/product.dart';
 
 class DetailesPage extends StatelessWidget {
   const DetailesPage({super.key});
@@ -13,60 +14,62 @@ class DetailesPage extends StatelessWidget {
 
     return Scaffold(
       backgroundColor: const Color(0xFF141312),
-      body: Column(
-        children: [
-          Positioned(
-            top: 0,
-            child: Container(
-              width: double.infinity,
-              height: 800.h,
-              decoration: const BoxDecoration(
-                image: DecorationImage(
-                    image: AssetImage("assets/images/background_images_3.png"),
-                    fit: BoxFit.cover),
-              ),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.start,
-                children: [
-                  SizedBox(
-                    height: 32.h,
-                  ),
-                  appbar(context),
-                  Container(
-                    height: 400.h,
-                    width: 600.w,
-                    decoration: BoxDecoration(
-                      image: const DecorationImage(
-                        image: AssetImage("assets/images/Rectangle 67.png"),
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            Positioned(
+              top: 0,
+              child: Container(
+                width: double.infinity,
+                height: 800.h,
+                decoration:  BoxDecoration(
+                  image: DecorationImage(
+                      image: AssetImage(productItem.imageFile),
+                      fit: BoxFit.cover),
+                ),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: [
+                    SizedBox(
+                      height: 40,
+                    ),
+                    appbar(context),
+                    Container(
+                      height: 400.h,
+                      width: MediaQuery.of(context).size.width * 0.7,
+                      decoration: BoxDecoration(
+                        image:  DecorationImage(
+                          image: AssetImage("assets/images/${productItem.imageFile}"),
+                        ),
+                        color: Colors.transparent,
+                        borderRadius: BorderRadius.circular(100),
                       ),
-                      color: Colors.transparent,
-                      borderRadius: BorderRadius.circular(100),
                     ),
-                  ),
-                  Text(
-                    productItem.title,
-                    style: const TextStyle(
-                      fontSize: 32,
-                      fontWeight: FontWeight.normal,
-                      color: Colors.white,
+                    Text(
+                      productItem.title,
+                      style: const TextStyle(
+                        fontSize: 32,
+                        fontWeight: FontWeight.normal,
+                        color: Colors.white,
+                      ),
                     ),
-                  ),
-                  SizedBox(
-                    height: 10.h,
-                  ),
-                  Text(
-                    productItem.description,
-                    style: TextStyle(
-                      fontSize: 20.sp,
-                      fontWeight: FontWeight.normal,
-                      color: Colors.white,
+                    SizedBox(
+                      height: 30,
                     ),
-                  ),
-                ],
+                    Text(
+                      productItem.description,
+                      style: TextStyle(
+                        fontSize: 20.sp,
+                        fontWeight: FontWeight.normal,
+                        color: Colors.white,
+                      ),
+                    ),
+                  ],
+                ),
               ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }

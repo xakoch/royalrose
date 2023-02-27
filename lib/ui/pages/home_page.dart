@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:retoran_app/mock/menu_products.dart';
-import 'package:retoran_app/ui/pages/manyu_Page2.dart';
 
+import '../../mock/menu_products.dart';
 import '../../models/menu.dart';
 import '../widget/rounded_border_card.dart';
+import 'manyu_Page2.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});

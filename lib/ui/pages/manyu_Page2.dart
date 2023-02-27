@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:retoran_app/models/category_products.dart';
-import 'package:retoran_app/ui/pages/detailes_page.dart';
 
+import '../../models/category_products.dart';
 import '../../models/menu.dart';
 import '../../models/product.dart';
+import 'detailes_page.dart';
 
 class MenyuPage2 extends StatelessWidget {
   const MenyuPage2({super.key});

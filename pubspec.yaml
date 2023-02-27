@@ -41,15 +41,17 @@ dependencies:
   usage: ^4.1.0
   google_fonts: ^4.0.3
   easy_localization: ^3.0.1
+#  flutter_launcher_icons: ^0.12.0
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
 
-flutter_icons:
-  image_path: "assets/images/app_logo.png" 
-  android: true
-  ios: true
+#flutter_icons:
+#  ios: true
+#  remove_alpha_ios: true
+#  android: "launcher_icon"
+#  image_path: "assets/images/app_logo.png"
   # optionally, as transparency is not allowed on app store
   # remove_alpha_ios: true
 

@@ -2,7 +2,8 @@ import 'package:easy_splash_screen/easy_splash_screen.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import 'package:flutter/material.dart';
-import 'package:retoran_app/ui/pages/home_page.dart';
+
+import '../pages/home_page.dart';
 
 class SplashPage extends StatefulWidget {
   const SplashPage({Key? key}) : super(key: key);

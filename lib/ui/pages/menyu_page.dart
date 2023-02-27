@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:retoran_app/ui/pages/home_page.dart';
 
 import 'detailes_page.dart';
+import 'home_page.dart';
 
 class MenyuPage extends StatelessWidget {
   const MenyuPage({super.key});

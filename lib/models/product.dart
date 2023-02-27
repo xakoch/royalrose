@@ -7,7 +7,7 @@ class Product {
   Product({
     required this.title,
     this.price = 0,
-    required this.description,
+    this.description = '',
     required this.imageFile,
   });
 }

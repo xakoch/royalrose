@@ -1,4 +1,3 @@
-import 'package:easy_localization/easy_localization.dart';
 
 import '../models/category_products.dart';
 import '../models/menu.dart';
@@ -67,7 +66,7 @@ class MockProducts {
 						),
 						Product(
 							title: 'Долма',
-							imageFile: 'dolma.jpg'
+							imageFile: 'dolma.jpg', description: ''
 						),
 						// Product(title: 'Жулень', imageFile: 'Images_list1.png'),
 					],
@@ -78,23 +77,23 @@ class MockProducts {
 					products: [
 						Product(
 							title: 'Суп «Royal Rose»',
-							imageFile: 'sup_rr.jpg'
+							imageFile: 'sup_rr.jpg', description: ''
 						),
 						Product(
 							title: 'Суп «Мароканский»',
-							imageFile: 'sup_marokanskiy.jpg'
+							imageFile: 'sup_marokanskiy.jpg', description: ''
 						),
 						Product(
 							title: 'Суп «с фрикадельками и лапшой»',
-							imageFile: 'sup_frikadelka.jpg'
+							imageFile: 'sup_frikadelka.jpg', description: ''
 						),
 						Product(
 							title: 'Суп «Мампар»',
-							imageFile: 'sup_mampar.jpg'
+							imageFile: 'sup_mampar.jpg', description: ''
 						),
 						Product(
 							title: 'Суп «Мохора»',
-							imageFile: 'sup_moxora.jpg'
+							imageFile: 'sup_moxora.jpg', description: ''
 						),
 					],
 				),
@@ -133,7 +132,7 @@ class MockProducts {
 						),
 						Product(
 							title: 'Рис, кукуруза, горошок',
-							imageFile: 'Images_list1.png'
+							imageFile: 'Images_list1.png',
 						),
 						Product(
 							title: 'Пюре',
@@ -242,7 +241,7 @@ class MockProducts {
 						),
 						Product(
 							title: 'Долма',
-							imageFile: 'dolma.jpg'
+							imageFile: 'dolma.jpg', description: ''
 						),
 						// Product(title: 'Жулень', imageFile: 'Images_list1.png'),
 						// Product(title: 'Сочный барашек', imageFile: 'Images_list1.png'),
@@ -310,19 +309,19 @@ class MockProducts {
 					products: [
 						Product(
 							title: 'Запеченная картошка по деревенски',
-							imageFile: 'Images_list1.png'
+							imageFile: 'Images_list1.png', description: ''
 						),
 						Product(
 							title: 'Овощи',
-							imageFile: 'Images_list1.png'
+							imageFile: 'Images_list1.png', description: ''
 						),
 						Product(
 							title: 'Рис, кукуруза, горошок',
-							imageFile: 'Images_list1.png'
+							imageFile: 'Images_list1.png', description: ''
 						),
 						Product(
 							title: 'Пюре',
-							imageFile: 'Images_list1.png'
+							imageFile: 'Images_list1.png', description: ''
 						),
 					],
 				),
@@ -331,7 +330,7 @@ class MockProducts {
 					products: [
 						Product(
 							title: '(черный хлеб, белый хлеб, отрубной хлеб, патыр)',
-							imageFile: 'Хлебассорти.png'
+							imageFile: 'Хлебассорти.png', description: ''
 						),
 					],
 				),
@@ -340,7 +339,7 @@ class MockProducts {
 					products: [
 						Product(
 							title: '«Royal Rose» меренговый рулет',
-							imageFile: 'Images_list1.png'
+							imageFile: 'Images_list1.png', description: ''
 						),
 					],
 				),
@@ -350,7 +349,7 @@ class MockProducts {
 					products: [
 			            Product(
 			            	title: 'Сола, фанта, содас газом, без газа, чай, кофе, мохшто, сок)',
-			            	imageFile: 'Images_list1.png'
+			            	imageFile: 'Images_list1.png', description: ''
 			            ),
 					],
 				),
@@ -488,27 +487,27 @@ class MockProducts {
 						),
 						Product(
 							title: 'Суп «Мароканский»',
-							imageFile: 'sup_marokanskiy.jpg'
+							imageFile: 'sup_marokanskiy.jpg', description: ''
 						),
 						Product(
 							title: 'Суп «с фрикадельками и лапшой»',
-							imageFile: 'sup_frikadelka.jpg'
+							imageFile: 'sup_frikadelka.jpg', description: ''
 						),
 						Product(
 							title: 'Суп «Мампар»',
-							imageFile: 'sup_mampar.jpg'
+							imageFile: 'sup_mampar.jpg', description: ''
 						),
 						Product(
 							title: 'Суп «Мохора»',
-							imageFile: 'sup_moxora.jpg'
+							imageFile: 'sup_moxora.jpg', description: ''
 						),
 						Product(
 							title: 'Суп «Ассорти»',
-							imageFile: 'sup_assorti.jpg'
+							imageFile: 'sup_assorti.jpg', description: ''
 						),
 						Product(
 							title: 'Суп «Крем-суп»',
-							imageFile: 'sup_kremsup.jpg'
+							imageFile: 'sup_kremsup.jpg', description: ''
 						),
 					],
 				),

@@ -1,10 +1,10 @@
+import 'package:RoyalRose/ui/pages/detailes_page.dart';
+import 'package:RoyalRose/ui/pages/home_page.dart';
+import 'package:RoyalRose/ui/pages/manyu_Page2.dart';
+import 'package:RoyalRose/ui/splash/splash_page2.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:retoran_app/ui/pages/detailes_page.dart';
-import 'package:retoran_app/ui/pages/home_page.dart';
-import 'package:retoran_app/ui/pages/manyu_Page2.dart';
-import 'package:retoran_app/ui/splash/splash_page2.dart';
 import 'package:flutter/services.dart';
 
 void main() async {

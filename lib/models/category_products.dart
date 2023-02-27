@@ -1,4 +1,4 @@
-import 'package:retoran_app/models/product.dart';
+import 'package:RoyalRose/models/product.dart';
 
 class CategoryProducts {
   final String title;

@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
-import 'package:retoran_app/ui/pages/home_page.dart';
+
+import '../pages/home_page.dart';
 
 class SplashScreen extends StatefulWidget {
   @override
