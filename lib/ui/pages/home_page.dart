@@ -40,12 +40,8 @@ class HomePage extends StatelessWidget {
           Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Positioned(
-                left: 0,
-                right: 0,
-                child: Center(
-                  child: menuList(context),
-                ),
+              Center(
+                child: menuList(context),
               ),
             ],
           ),

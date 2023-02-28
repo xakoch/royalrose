@@ -17,56 +17,44 @@ class DetailesPage extends StatelessWidget {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            Positioned(
-              top: 0,
-              child: Container(
-                width: double.infinity,
-                height: 800.h,
-                decoration:  BoxDecoration(
-                  image: DecorationImage(
-                      image: AssetImage(productItem.imageFile),
-                      fit: BoxFit.cover),
+            Column(
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: [
+               const SizedBox(
+                  height: 40,
                 ),
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  children: [
-                    SizedBox(
-                      height: 40,
+                appbar(context),
+                Container(
+                  height: 400.h,
+                  width: MediaQuery.of(context).size.width * 0.7,
+                  decoration: BoxDecoration(
+                    image:  DecorationImage(
+                      image: AssetImage("assets/images/${productItem.imageFile}"),
                     ),
-                    appbar(context),
-                    Container(
-                      height: 400.h,
-                      width: MediaQuery.of(context).size.width * 0.7,
-                      decoration: BoxDecoration(
-                        image:  DecorationImage(
-                          image: AssetImage("assets/images/${productItem.imageFile}"),
-                        ),
-                        color: Colors.transparent,
-                        borderRadius: BorderRadius.circular(100),
-                      ),
-                    ),
-                    Text(
-                      productItem.title,
-                      style: const TextStyle(
-                        fontSize: 32,
-                        fontWeight: FontWeight.normal,
-                        color: Colors.white,
-                      ),
-                    ),
-                    SizedBox(
-                      height: 30,
-                    ),
-                    Text(
-                      productItem.description,
-                      style: TextStyle(
-                        fontSize: 20.sp,
-                        fontWeight: FontWeight.normal,
-                        color: Colors.white,
-                      ),
-                    ),
-                  ],
+                    color: Colors.transparent,
+                    borderRadius: BorderRadius.circular(100),
+                  ),
                 ),
-              ),
+                Text(
+                  productItem.title,
+                  style: const TextStyle(
+                    fontSize: 32,
+                    fontWeight: FontWeight.normal,
+                    color: Colors.white,
+                  ),
+                ),
+                SizedBox(
+                  height: 30,
+                ),
+                Text(
+                  productItem.description,
+                  style: TextStyle(
+                    fontSize: 20.sp,
+                    fontWeight: FontWeight.normal,
+                    color: Colors.white,
+                  ),
+                ),
+              ],
             ),
           ],
         ),
