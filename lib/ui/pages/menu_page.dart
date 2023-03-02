@@ -5,16 +5,16 @@ import 'package:google_fonts/google_fonts.dart';
 import '../../models/category_products.dart';
 import '../../models/menu.dart';
 import '../../models/product.dart';
-import 'detailes_page.dart';
+import 'details_page.dart';
 
-class MenyuPage2 extends StatelessWidget {
-  const MenyuPage2({super.key});
+class MenuPage extends StatelessWidget {
+  const MenuPage({super.key});
   static const routeName = '/menu';
 
   @override
   Widget build(BuildContext context) {
     final args = ModalRoute.of(context)!.settings.arguments as Map;
-    final Menu menutItem = args['menu'] as Menu;
+    final Menu menuItem = args['menu'] as Menu;
 
     return Scaffold(
       body: Stack(
@@ -26,7 +26,7 @@ class MenyuPage2 extends StatelessWidget {
             width: 1024,
             fit: BoxFit.cover,
           ),
-          mainContent(context, menutItem),
+          mainContent(context, menuItem),
         ],
       ),
     );
@@ -38,18 +38,17 @@ class MenyuPage2 extends StatelessWidget {
         SizedBox(height: 30.h),
         appBar(context, menutItem.title, menutItem.price),
         SizedBox(height: 30.h),
-        //Bu Appbardan keyingi qismi
+        //after appBar
         Expanded(
           child: ListView.builder(
             itemBuilder: (ctx, index) {
               final currentCategory = menutItem.categories[index];
               return Column(
                 children: [
-                  SizedBox(height: 60.h),
+                  SizedBox(height: 20.h),
                   categoryTitle(currentCategory),
-                  SizedBox(height: 60.h),
+                  SizedBox(height: 30.h),
                   productList1(context, currentCategory.products),
-                  SizedBox(height: 60.h),
                 ],
               );
             },
@@ -125,7 +124,7 @@ class MenyuPage2 extends StatelessWidget {
 
   Widget categoryTitle(CategoryProducts category) {
     String subtitle = '';
-    
+
     if (category.types == 0) {
       subtitle = '';
     } else if (category.types == 1) {
@@ -138,17 +137,13 @@ class MenyuPage2 extends StatelessWidget {
 
     return Container(
       padding: EdgeInsets.symmetric(horizontal: 48.w),
-      height: 48.h,
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.center,
         mainAxisSize: MainAxisSize.max,
         children: [
           Text(
             category.title,
-            style: TextStyle(
-              color: Colors.white,
-              fontSize: 48.sp,
-            ),
+            style: TextStyle(color: Colors.white, fontSize: 48.sp, fontWeight: FontWeight.w400),
           ),
           SizedBox(width: 24.w),
           Padding(
@@ -186,42 +181,33 @@ class MenyuPage2 extends StatelessWidget {
   }
 
   InkWell productItem(BuildContext context, Product product) {
+    print("File image");
+    print(product.imageFile);
     return InkWell(
       onTap: () {
-        Navigator.of(context).pushNamed(
-          DetailesPage.routeName,
-          arguments: {
-            'product': product,
-          },
-        );
+        Navigator.push(context, MaterialPageRoute(builder: (context) => DetailsPage(productItem: product)));
       },
       child: SizedBox(
         height: 210.h,
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Container(
-              // margin: const EdgeInsets.symmetric(horizontal: 26),
+            SizedBox(
               width: 220.w,
               height: 160.h,
-              decoration: BoxDecoration(
-                image: DecorationImage(
-                  image: AssetImage(
-                    'assets/images/${product.imageFile}',
-                  ),
-                  // fit: BoxFit.cover,
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(20.r), // Image border
+                child: SizedBox.fromSize(
+                  size: Size.fromRadius(20.r), // Image radius
+                  child: Image.asset("assets/images/${product.imageFile}", fit: BoxFit.fill,),
                 ),
-                borderRadius: BorderRadius.circular(132),
               ),
             ),
             SizedBox(height: 12.h),
             Text(
               product.title,
               textAlign: TextAlign.center,
-              style: TextStyle(
-                fontSize: 16.sp,
-                color: Colors.white,
-              ),
+              style: TextStyle(fontSize: 18.sp, color: Colors.white, fontWeight: FontWeight.w400),
             ),
           ],
         ),

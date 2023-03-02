@@ -1,30 +1,43 @@
-import 'dart:async';
+import 'package:easy_splash_screen/easy_splash_screen.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
 import 'package:flutter/material.dart';
 
 import '../pages/home_page.dart';
 
-class SplashScreen extends StatefulWidget {
+class SplashPage extends StatefulWidget {
+  const SplashPage({Key? key}) : super(key: key);
+
+  static const routeName = '/';
+
   @override
-  _SplashScreenState createState() => _SplashScreenState();
+  _SplashPageState createState() => _SplashPageState();
 }
 
-class _SplashScreenState extends State<SplashScreen> {
-  @override
-  void initState() {
-    super.initState();
-    Timer(
-        Duration(seconds: 5),
-        () => Navigator.of(context).pushReplacement(
-            MaterialPageRoute(builder: (BuildContext context) => HomePage())));
-  }
-
+class _SplashPageState extends State<SplashPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Colors.white,
-      body: Center(
-        child: SplashScreen(),
+    return EasySplashScreen(
+      logoWidth: 250.w,
+      logo: Image.asset(
+        'assets/images/RR_logo_darkbg.png',
+        cacheHeight: 190,
+        cacheWidth: 250,
+        // width: 500.w,
+        // height: 500.h,
       ),
+      title: Text(
+        "",
+        style: TextStyle(
+          fontSize: 18.sp,
+          fontWeight: FontWeight.bold,
+        ),
+      ),
+      backgroundColor: Colors.black,
+      showLoader: true,
+      // loadingText: Text("Loading..."),
+      navigator: HomePage.routeName,
+      durationInSeconds: 1,
     );
   }
 }

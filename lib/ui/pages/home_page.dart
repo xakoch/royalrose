@@ -4,7 +4,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../mock/menu_products.dart';
 import '../../models/menu.dart';
 import '../widget/rounded_border_card.dart';
-import 'manyu_Page2.dart';
+import 'menu_page.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -54,9 +54,9 @@ class HomePage extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceAround,
       children: [
-        menuItem(context, MenyuPage2.routeName, MockProducts.menusList[0]),
-        menuItem(context, MenyuPage2.routeName, MockProducts.menusList[1]),
-        menuItem(context, MenyuPage2.routeName, MockProducts.menusList[2]),
+        menuItem(context, MenuPage.routeName, MockProducts.menusList[0]),
+        menuItem(context, MenuPage.routeName, MockProducts.menusList[1]),
+        menuItem(context, MenuPage.routeName, MockProducts.menusList[2]),
       ],
     );
   }
@@ -83,8 +83,6 @@ class HomePage extends StatelessWidget {
               borderRadius: BorderRadius.circular(133.w),
               child: Image.asset(
                 "assets/images/${item.imageFile}",
-                // width: 266.w,
-                // height: 266.h,
                 fit: BoxFit.fill,
               ),
             ),

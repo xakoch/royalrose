@@ -41,6 +41,7 @@ dependencies:
   usage: ^4.1.0
   google_fonts: ^4.0.3
   easy_localization: ^3.0.1
+  page_transition: ^2.0.9
 #  flutter_launcher_icons: ^0.12.0
 
 dev_dependencies:
