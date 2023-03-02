@@ -1,4 +1,3 @@
-
 import '../models/category_products.dart';
 import '../models/menu.dart';
 import '../models/product.dart';
@@ -8,120 +7,52 @@ class MockProducts {
 		Menu(
 			title: 'Первое меню',
 			price: '42',
-			imageFile: 'images_3.png',
+			imageFile: 'images_1.png',
 			categories: [
 				CategoryProducts(
-					title: 'Салаты',
-					types: 3,
-					products: [
-						Product(
-							title: 'Салат «Royal Rose»',
-							description: '(Мясо, баклажан, черри, руколла, чили соус)',
-							imageFile: 'salad_royalrose.png'
-						),
-						Product(
-							title: 'Салат «Фишер»',
-							description: '(фетаки, черри, огурцы, апелсин, айсберг, лоллоросса, сок лимона)',
-							imageFile: 'salad_fisher.png'
-						),
-						Product(
-							title: 'Салат «Цезар»',
-							description: '(куриная грудка, айсберг, черри, пармезан, крутоны, соус цезар)',
-							imageFile: 'salad_tsezor.png'
-						),
-						Product(
-							title: 'Салат «Оливье»',
-							description: '(говяжье мясо, картошка, морковь, яйцо, горох, соленные огурцы)',
-							imageFile: 'salad_olivie.png'
-						),
-						Product(
-							title: 'Салат «Французкий»',
-							description: '(мясо, свекла, марковь, капуста, картофель пай, огурцы)',
-							imageFile: 'salad_fransuzkiy.png'
-						),
-						Product(
-							title: 'Салат «Яблочный фонтан»',
-							description: '',
-							imageFile: 'salad_fontan.png'
-						),
-						Product(
-							title: 'Салат «из маринадов»',
-							description: '(говядина, грибы маринов, сол огурчик)',
-							imageFile: 'salad_marinadov.png'
-						),
-						Product(
-							title: 'Салат «Авеню»',
-							description: '(мясо копч, индейка, сыр, колбаса копч, картофель пай, айсберг, соул)',
-							imageFile: 'salad_avenyu.png'
-						),
-					],
-				),
-				CategoryProducts(
-					title: 'Горячая закуска',
-					products: [
-						Product(
-							title: 'Сомса',
-							description: '(мясной самса и овошной самса, соус)',
-							imageFile: 'somsa.png'
-						),
-						Product(
-							title: 'Долма',
-							imageFile: 'dolma.png', description: ''
-						),
-						// Product(title: 'Жулень', imageFile: 'default.png'),
-					],
-				),
-				CategoryProducts(
-					title: 'Первое блюдо',
+					title: 'Холодное',
 					types: 1,
 					products: [
 						Product(
-							title: 'Суп «Royal Rose»',
-							imageFile: 'sup_rr.png', description: ''
+							title: 'Мясное ассорти',
+							imageFile: 'cold/myasnoy_assorti.png'
 						),
 						Product(
-							title: 'Суп «Мароканский»',
-							imageFile: 'sup_marokanskiy.png', description: ''
+							title: 'Икра красная',
+							imageFile: 'cold/ikra.png'
 						),
 						Product(
-							title: 'Суп «с фрикадельками и лапшой»',
-							imageFile: 'sup_frikadelka.png', description: ''
+							title: 'Овощное ассорти',
+							imageFile: 'cold/ovoshnoy_assorti.png'
 						),
 						Product(
-							title: 'Суп «Мампар»',
-							imageFile: 'sup_mampar.png', description: ''
+							title: 'Ассорти из сыра',
+							imageFile: 'cold/sirniy_assorti.png'
 						),
 						Product(
-							title: 'Суп «Мохора»',
-							imageFile: 'sup_moxora.png', description: ''
-						),
-					],
-				),
-				CategoryProducts(
-					title: 'Второе блюда',
-					types: 1,
-					products: [
-						Product(
-				            title: '«Royal Rose»',
-				            description: '(говяжья качалка, тушенная в соусе)',
-				            imageFile: '2_rr.png'
-				        ),
-						Product(
-							title: '«Дует»',
-							description: '(телятина с курицей под сырным соусом)',
-							imageFile: '2_duet.png'
+							title: 'Ассорти из брынзы',
+							imageFile: 'cold/brinza_assorti.png'
 						),
 						Product(
-							title: '«Куриная грудка»',
-							description: '(Сочнач фаршированная куриная грудка под соусом бешамел)',
-							imageFile: '2_kurinnaya_grudka.png'
+							title: 'Лимон',
+							imageFile: 'cold/limon.png'
 						),
-					],
-				),
-				CategoryProducts(
-					title: 'Гарнир',
-					types: 1,
-					products: [
+						Product(
+							title: 'Куриные крылышки в сливочном соусе',
+							imageFile: 'cold/kurinniy_kirshki.png'
+						),
+						Product(
+							title: 'Маринованное ассорти',
+							imageFile: 'cold/marinovannaya.png'
+						),
+						Product(
+							title: 'Селедка «необыкновенная»',
+							imageFile: 'cold/seledka.png'
+						),
+						Product(
+							title: 'Фруктовая нарезка',
+							imageFile: 'default.png'
+						),
 						Product(
 							title: 'Запеченная картошка по деревенски',
 							imageFile: 'default.png'
@@ -132,7 +63,7 @@ class MockProducts {
 						),
 						Product(
 							title: 'Рис, кукуруза, горошок',
-							imageFile: 'default.png',
+							imageFile: 'default.png'
 						),
 						Product(
 							title: 'Пюре',
@@ -141,11 +72,212 @@ class MockProducts {
 					],
 				),
 				CategoryProducts(
+					title: 'Салаты',
+					types: 3,
+					products: [
+						Product(
+							title: 'Салат «Royal Rose»',
+							description: '(Мясо, баклажан, черри, руколла, чили соус)',
+							imageFile: 'salads/salad_royalrose.png'
+						),
+						Product(
+							title: 'Салат «Фишер»',
+							description: '(фетаки, черри, огурцы, апелсин, айсберг, лоллоросса, сок лимона)',
+							imageFile: 'salads/salad_fisher.png'
+						),
+						Product(
+							title: 'Салат «Цезар»',
+							description: '(куриная грудка, айсберг, черри, пармезан, крутоны, соус цезар)',
+							imageFile: 'salads/salad_tsezor.png'
+						),
+						Product(
+							title: 'Салат «Оливье»',
+							description: '(говяжье мясо, картошка, морковь, яйцо, горох, соленные огурцы)',
+							imageFile: 'salads/salad_olivie.png'
+						),
+						Product(
+							title: 'Салат «Французкий»',
+							description: '(мясо, свекла, марковь, капуста, картофель пай, огурцы)',
+							imageFile: 'salads/salad_fransuzkiy.png'
+						),
+						Product(
+							title: 'Салат «Яблочный фонтан»',
+							description: '',
+							imageFile: 'salads/salad_fontan.png'
+						),
+						Product(
+							title: 'Салат «из маринадов»',
+							description: '(говядина, грибы маринов, сол огурчик)',
+							imageFile: 'salads/salad_marinadov.png'
+						),
+						Product(
+							title: 'Салат «Авеню»',
+							description: '(мясо копч, индейка, сыр, колбаса копч, картофель пай, айсберг, соул)',
+							imageFile: 'salads/salad_avenyu.png'
+						),
+						Product(
+							title: 'Салат «Флагман»',
+							description: '(рукола, черри, айсберг, тунец, болгарский, соус)',
+							imageFile: 'salads/salad_flagman.png'
+						),
+						Product(
+							title: 'Салат «Любимый»',
+							description: '(баклажан, помидоручесноку зелень)',
+							imageFile: 'salads/salad_lyubimiy.png'
+						),
+						// Product(
+						// 	title: 'Салат «Восторг»',
+						// 	description: '(мясоггруша;рукола; кедровые орешкы)',
+						// 	imageFile: 'salads/salad_vostorg.png'
+						// ),
+						// Product(
+						// 	title: 'Салат «Морс: кой коктейл»',
+						// 	imageFile: 'salads/salad_mors.png'
+						// ),
+						Product(
+							title: 'Салат «Телятина с пармезаном»',
+							description: '(телятина,рукола, вяленый пом, пармизан, огурец, рикотта)',
+							imageFile: 'salads/salad_telyatina.png'
+						),
+						Product(
+							title: 'Салат «Баклажан с пашотом»',
+							description: '(баклажан, яйцо пашот, коп говядина,руколла, малина,черри пом)',
+							imageFile: 'salads/salad_baklajan.png'
+						),
+						Product(
+							title: 'Салат «Морской бриз»',
+							description: '(огурцы, айсберг, лоларосса, семга, маслиная, криветки, соус песто)',
+							imageFile: 'salads/salad_morskoy.png'
+						),
+						Product(
+							title: 'Салат «Фета с авакадо»',
+							description: '(фета, авакадо, телятина, помидор, рукола, соус пармезан)',
+							imageFile: 'salads/salad_feta.png'
+						),
+						Product(
+							title: 'Салат «Микс»',
+							description: '(каренное овоши с говалиной) (телятина, броколи, черри, болгарский, рукола, лук,соус овошной)',
+							imageFile: 'salads/salad_miks.png'
+						),
+						Product(
+							title: 'Салат «Запечённая семга»',
+							description: '(семга свежий, черри, рукола, лолароса,тунеи, соус маракуя)',
+							imageFile: 'salads/salad_semga.png'
+						),
+						Product(
+							title: 'Салат «Телятина с руколой»',
+							description: '(телятина,пармизан, рукола, черри, кедровый орех балзамический крем)',
+							imageFile: 'salads/salad_telyatina_rukoloy.png'
+						),
+					],
+				),
+				CategoryProducts(
+					title: 'Горячая закуска',
+					products: [
+						Product(
+							title: 'Сомса',
+							description: '(мясной самса и овошной самса, соус)',
+							imageFile: 'hot/somsa.png'
+						),
+						Product(
+							title: 'Долма',
+							imageFile: 'hot/dolma.png'
+						),
+						// Product(title: 'Жулень', imageFile: 'default.png'),
+						// Product(title: 'Сочный барашек', imageFile: 'default.png'),
+						// Product(title: 'Шох', imageFile: 'default.png'),
+					],
+				),
+				CategoryProducts(
+					title: 'Первое блюдо',
+					types: 1,
+					products: [
+						Product(
+							title: 'Суп «Royal Rose»',
+							imageFile: 'sup/sup_rr.png'
+						),
+						Product(
+							title: 'Суп «Мароканский»',
+							imageFile: 'sup/sup_marokanskiy.png', description: ''
+						),
+						Product(
+							title: 'Суп «с фрикадельками и лапшой»',
+							imageFile: 'sup/sup_frikadelka.png', description: ''
+						),
+						Product(
+							title: 'Суп «Мампар»',
+							imageFile: 'sup/sup_mampar.png', description: ''
+						),
+						Product(
+							title: 'Суп «Мохора»',
+							imageFile: 'sup/sup_moxora.png', description: ''
+						),
+						Product(
+							title: 'Суп «Ассорти»',
+							imageFile: 'sup/sup_assorti.png', description: ''
+						),
+						Product(
+							title: 'Суп «Крем-суп»',
+							imageFile: 'sup/sup_kremsup.png', description: ''
+						),
+					],
+				),
+				CategoryProducts(
+					title: 'Второе блюда',
+					types: 1,
+					products: [
+						Product(
+				            title: '«Royal Rose»',
+				            description: '(говяжья качалка, тушенная в соусе)',
+				            imageFile: '2/2_rr.png'
+				        ),
+						Product(
+							title: '«Дует»',
+							description: '(телятина с курицей под сырным соусом)',
+							imageFile: '2/2_duet.png'
+						),
+						Product(
+							title: '«Куриная грудка»',
+							description: '(Сочнач фаршированная куриная грудка под соусом бешамел)',
+							imageFile: '2/2_kurinnaya_grudka.png'
+						),
+						Product(
+							title: '«Медалион»',
+							description: '(медалион из телятины)',
+							imageFile: '2/2_medalion.png'
+						),
+						Product(
+							title: '«Мясо по королевский»',
+							imageFile: '2/2_mysa_po_korolovskiy.png'
+						),
+						Product(
+							title: '«Корейка с молодой картофелю»',
+							imageFile: '2/2_koreyka_molodoy_kartofel.png'
+						),
+						Product(
+							title: '«Баранья ножка в пюре»',
+							imageFile: '2/2_baranya_pyure.png'
+						),
+						Product(
+							title: '«Стейк из лосось»',
+							imageFile: '2/2_steyk_losos.png'
+						),
+						Product(
+							title: '«Стейк рибай с спаржой»',
+							imageFile: '2/2_steyk_riboy_sparjoy.png'
+						),
+						Product(
+							title: '«Рыбный микс»',
+							imageFile: '2/2_ribinskiy_miks.png'
+						),
+					],
+				),
+				CategoryProducts(
 					title: 'Хлеб ассорти',
 					products: [
 						Product(
 							title: '(черный хлеб, белый хлеб, отрубной хлеб, патыр)',
-							imageFile: 'Хлебассорти.png'
+							imageFile: 'xleb/xleb.png'
 						),
 					],
 				),
@@ -154,7 +286,19 @@ class MockProducts {
 					products: [
 						Product(
 							title: '«Royal Rose» меренговый рулет',
-							imageFile: 'default.png'
+							imageFile: 'desert/desert_rr.png'
+						),
+						Product(
+							title: '«Royal Rose» чизкейк'
+							imageFile: 'desert/chizkeyk.png'
+						),
+						Product(
+							title: '«Royal Rose» чизкейк'
+							imageFile: 'desert/chizkeyk_klubnichniy.png'
+						),
+						Product(
+							title: '«Royal Rose» чизкейк'
+							imageFile: 'desert/chizkeyk_shokoladniy.png'
 						),
 					],
 				),
@@ -171,195 +315,80 @@ class MockProducts {
 			],
 		),
 		Menu(
-			title: 'Первое меню',
+			title: 'Второе меню',
 			price: '52',
 			imageFile: 'images_2.png',
 			categories: [
 				CategoryProducts(
-					title: 'Салаты',
-					types: 3,
-					products: [
-						Product(
-							title: 'Салат «Royal Rose»',
-							description: '(Мясо, баклажан, черри, руколла, чили соус)',
-							imageFile: 'salad_royalrose.png'
-						),
-						Product(
-							title: 'Салат «Фишер»',
-							description: '(фетаки, черри, огурцы, апелсин, айсберг, лоллоросса, сок лимона)',
-							imageFile: 'salad_fisher.png'
-						),
-						Product(
-							title: 'Салат «Цезар»',
-							description: '(куриная грудка, айсберг, черри, пармезан, крутоны, соус цезар)',
-							imageFile: 'salad_tsezor.png'
-						),
-						Product(
-							title: 'Салат «Оливье»',
-							description: '(говяжье мясо, картошка, морковь, яйцо, горох, соленные огурцы)',
-							imageFile: 'salad_olivie.png'
-						),
-						Product(
-							title: 'Салат «Французкий»',
-							description: '(мясо, свекла, марковь, капуста, картофель пай, огурцы)',
-							imageFile: 'salad_fransuzkiy.png'
-						),
-						Product(
-							title: 'Салат «Яблочный фонтан»',
-							description: '',
-							imageFile: 'salad_fontan.png'
-						),
-						Product(
-							title: 'Салат «из маринадов»',
-							description: '(говядина, грибы маринов, сол огурчик)',
-							imageFile: 'salad_marinadov.png'
-						),
-						Product(
-							title: 'Салат «Авеню»',
-							description: '(мясо копч, индейка, сыр, колбаса копч, картофель пай, айсберг, соул)',
-							imageFile: 'salad_avenyu.png'
-						),
-						Product(
-							title: 'Салат «Флагман»',
-							description: '(рукола, черри, айсберг, тунец, болгарский, соус)',
-							imageFile: 'salad_flagman.png'
-						),
-						Product(
-							title: 'Салат «Любимый»',
-							description: '(баклажан, помидоручесноку зелень)',
-							imageFile: 'salad_lyubimiy.png'
-						),
-					],
-				),
-				CategoryProducts(
-					title: 'Горячая закуска',
-					products: [
-						Product(
-							title: 'Сомса',
-							description: '(мясной самса и овошной самса, соус)',
-							imageFile: 'somsa.png'
-						),
-						Product(
-							title: 'Долма',
-							imageFile: 'dolma.png', description: ''
-						),
-						// Product(title: 'Жулень', imageFile: 'default.png'),
-						// Product(title: 'Сочный барашек', imageFile: 'default.png'),
-					],
-				),
-				CategoryProducts(
-					title: 'Первое блюдо',
+					title: 'Холодное',
 					types: 1,
 					products: [
 						Product(
-							title: 'Суп «Royal Rose»',
-							imageFile: 'sup_rr.png'
+							title: 'Мясное ассорти',
+							imageFile: 'cold/myasnoy_assorti.png'
 						),
 						Product(
-							title: 'Суп «Мароканский»',
-							imageFile: 'sup_marokanskiy.png'
+							title: 'Икра красная',
+							imageFile: 'cold/ikra.png'
 						),
 						Product(
-							title: 'Суп «с фрикадельками и лапшой»',
-							imageFile: 'sup_frikadelka.png'
+							title: 'Овощное ассорти',
+							imageFile: 'cold/ovoshnoy_assorti.png'
 						),
 						Product(
-							title: 'Суп «Мампар»',
-							imageFile: 'sup_mampar.png'
+							title: 'Ассорти из сыра',
+							imageFile: 'cold/sirniy_assorti.png'
 						),
 						Product(
-							title: 'Суп «Мохора»',
-							imageFile: 'sup_moxora.png'
-						),
-					],
-				),
-				CategoryProducts(
-					title: 'Второе блюда',
-					types: 1,
-					products: [
-						Product(
-				            title: '«Royal Rose»',
-				            description: '(говяжья качалка, тушенная в соусе)',
-				            imageFile: '2_rr.png'
-				        ),
-						Product(
-							title: '«Дует»',
-							description: '(телятина с курицей под сырным соусом)',
-							imageFile: '2_duet.png'
+							title: 'Ассорти из брынзы',
+							imageFile: 'cold/brinza_assorti.png'
 						),
 						Product(
-							title: '«Куриная грудка»',
-							description: '(Сочнач фаршированная куриная грудка под соусом бешамел)',
-							imageFile: '2_kurinnaya_grudka.png'
+							title: 'Лимон',
+							imageFile: 'cold/limon.png'
 						),
 						Product(
-							title: '«Медалион»',
-							description: '(медалион из телятины)',
-							imageFile: '2_medalion.png'
+							title: 'Куриные крылышки в сливочном соусе',
+							imageFile: 'cold/kurinniy_kirshki.png'
 						),
 						Product(
-							title: '«Мясо по королевский»',
-							imageFile: '2_mysa_po_korolovskiy.png'
+							title: 'Маринованное ассорти',
+							imageFile: 'cold/marinovannaya.png'
 						),
-					],
-				),
-				CategoryProducts(
-					title: 'Гарнир',
-					types: 1,
-					products: [
+						Product(
+							title: 'Селедка «необыкновенная»',
+							imageFile: 'cold/seledka.png'
+						),
+						Product(
+							title: 'Фруктовая нарезка',
+							imageFile: 'default.png'
+						),
+						Product(
+							title: 'Рыбное ассорти',
+							imageFile: 'cold/ribniy_assorti.png'
+						),
+						Product(
+							title: 'Суши',
+							imageFile: 'cold/sushi.png'
+						),
 						Product(
 							title: 'Запеченная картошка по деревенски',
-							imageFile: 'default.png', description: ''
+							imageFile: 'default.png'
 						),
 						Product(
 							title: 'Овощи',
-							imageFile: 'default.png', description: ''
+							imageFile: 'default.png'
 						),
 						Product(
 							title: 'Рис, кукуруза, горошок',
-							imageFile: 'default.png', description: ''
+							imageFile: 'default.png'
 						),
 						Product(
 							title: 'Пюре',
-							imageFile: 'default.png', description: ''
+							imageFile: 'default.png'
 						),
 					],
 				),
-				CategoryProducts(
-					title: 'Хлеб ассорти',
-					products: [
-						Product(
-							title: '(черный хлеб, белый хлеб, отрубной хлеб, патыр)',
-							imageFile: 'Хлебассорти.png', description: ''
-						),
-					],
-				),
-				CategoryProducts(
-					title: 'Десерт',
-					products: [
-						Product(
-							title: '«Royal Rose» меренговый рулет',
-							imageFile: 'default.png', description: ''
-						),
-					],
-				),
-				CategoryProducts(
-					title: 'Напитки (без ограничений)',
-					types: 99,
-					products: [
-			            Product(
-			            	title: 'Сола, фанта, содас газом, без газа, чай, кофе, мохшто, сок)',
-			            	imageFile: 'default.png', description: ''
-			            ),
-					],
-				),
-			],
-		),
-		Menu(
-			title: 'Первое меню',
-			price: '75',
-			imageFile: 'images_1.png',
-			categories: [
 				CategoryProducts(
 					title: 'Салаты',
 					types: 3,
@@ -367,96 +396,96 @@ class MockProducts {
 						Product(
 							title: 'Салат «Royal Rose»',
 							description: '(Мясо, баклажан, черри, руколла, чили соус)',
-							imageFile: 'salad_royalrose.png'
+							imageFile: 'salads/salad_royalrose.png'
 						),
 						Product(
 							title: 'Салат «Фишер»',
 							description: '(фетаки, черри, огурцы, апелсин, айсберг, лоллоросса, сок лимона)',
-							imageFile: 'salad_fisher.png'
+							imageFile: 'salads/salad_fisher.png'
 						),
 						Product(
 							title: 'Салат «Цезар»',
 							description: '(куриная грудка, айсберг, черри, пармезан, крутоны, соус цезар)',
-							imageFile: 'salad_tsezor.png'
+							imageFile: 'salads/salad_tsezor.png'
 						),
 						Product(
 							title: 'Салат «Оливье»',
 							description: '(говяжье мясо, картошка, морковь, яйцо, горох, соленные огурцы)',
-							imageFile: 'salad_olivie.png'
+							imageFile: 'salads/salad_olivie.png'
 						),
 						Product(
 							title: 'Салат «Французкий»',
 							description: '(мясо, свекла, марковь, капуста, картофель пай, огурцы)',
-							imageFile: 'salad_fransuzkiy.png'
+							imageFile: 'salads/salad_fransuzkiy.png'
 						),
 						Product(
 							title: 'Салат «Яблочный фонтан»',
 							description: '',
-							imageFile: 'salad_fontan.png'
+							imageFile: 'salads/salad_fontan.png'
 						),
 						Product(
 							title: 'Салат «из маринадов»',
 							description: '(говядина, грибы маринов, сол огурчик)',
-							imageFile: 'salad_marinadov.png'
+							imageFile: 'salads/salad_marinadov.png'
 						),
 						Product(
 							title: 'Салат «Авеню»',
 							description: '(мясо копч, индейка, сыр, колбаса копч, картофель пай, айсберг, соул)',
-							imageFile: 'salad_avenyu.png'
+							imageFile: 'salads/salad_avenyu.png'
 						),
 						Product(
 							title: 'Салат «Флагман»',
 							description: '(рукола, черри, айсберг, тунец, болгарский, соус)',
-							imageFile: 'salad_flagman.png'
+							imageFile: 'salads/salad_flagman.png'
 						),
 						Product(
 							title: 'Салат «Любимый»',
 							description: '(баклажан, помидоручесноку зелень)',
-							imageFile: 'salad_lyubimiy.png'
+							imageFile: 'salads/salad_lyubimiy.png'
 						),
 						// Product(
 						// 	title: 'Салат «Восторг»',
 						// 	description: '(мясоггруша;рукола; кедровые орешкы)',
-						// 	imageFile: 'salad_vostorg.png'
+						// 	imageFile: 'salads/salad_vostorg.png'
 						// ),
 						// Product(
 						// 	title: 'Салат «Морс: кой коктейл»',
-						// 	imageFile: 'salad_mors.png'
+						// 	imageFile: 'salads/salad_mors.png'
 						// ),
 						Product(
 							title: 'Салат «Телятина с пармезаном»',
 							description: '(телятина,рукола, вяленый пом, пармизан, огурец, рикотта)',
-							imageFile: 'salad_telyatina.png'
+							imageFile: 'salads/salad_telyatina.png'
 						),
 						Product(
 							title: 'Салат «Баклажан с пашотом»',
 							description: '(баклажан, яйцо пашот, коп говядина,руколла, малина,черри пом)',
-							imageFile: 'salad_baklajan.png'
+							imageFile: 'salads/salad_baklajan.png'
 						),
 						Product(
 							title: 'Салат «Морской бриз»',
 							description: '(огурцы, айсберг, лоларосса, семга, маслиная, криветки, соус песто)',
-							imageFile: 'sald_morskoy.png'
+							imageFile: 'salads/salad_morskoy.png'
 						),
 						Product(
 							title: 'Салат «Фета с авакадо»',
 							description: '(фета, авакадо, телятина, помидор, рукола, соус пармезан)',
-							imageFile: 'salad_feta.png'
+							imageFile: 'salads/salad_feta.png'
 						),
 						Product(
 							title: 'Салат «Микс»',
 							description: '(каренное овоши с говалиной) (телятина, броколи, черри, болгарский, рукола, лук,соус овошной)',
-							imageFile: 'salad_miks.png'
+							imageFile: 'salads/salad_miks.png'
 						),
 						Product(
 							title: 'Салат «Запечённая семга»',
 							description: '(семга свежий, черри, рукола, лолароса,тунеи, соус маракуя)',
-							imageFile: 'salad_semga.png'
+							imageFile: 'salads/salad_semga.png'
 						),
 						Product(
 							title: 'Салат «Телятина с руколой»',
 							description: '(телятина,пармизан, рукола, черри, кедровый орех балзамический крем)',
-							imageFile: 'salad_telyatina_rukoloy.png'
+							imageFile: 'salads/salad_telyatina_rukoloy.png'
 						),
 					],
 				),
@@ -466,11 +495,11 @@ class MockProducts {
 						Product(
 							title: 'Сомса',
 							description: '(мясной самса и овошной самса, соус)',
-							imageFile: 'somsa.png'
+							imageFile: 'hot/somsa.png'
 						),
 						Product(
 							title: 'Долма',
-							imageFile: 'dolma.png'
+							imageFile: 'hot/dolma.png'
 						),
 						// Product(title: 'Жулень', imageFile: 'default.png'),
 						// Product(title: 'Сочный барашек', imageFile: 'default.png'),
@@ -483,31 +512,31 @@ class MockProducts {
 					products: [
 						Product(
 							title: 'Суп «Royal Rose»',
-							imageFile: 'sup_rr.png'
+							imageFile: 'sup/sup_rr.png'
 						),
 						Product(
 							title: 'Суп «Мароканский»',
-							imageFile: 'sup_marokanskiy.png', description: ''
+							imageFile: 'sup/sup_marokanskiy.png', description: ''
 						),
 						Product(
 							title: 'Суп «с фрикадельками и лапшой»',
-							imageFile: 'sup_frikadelka.png', description: ''
+							imageFile: 'sup/sup_frikadelka.png', description: ''
 						),
 						Product(
 							title: 'Суп «Мампар»',
-							imageFile: 'sup_mampar.png', description: ''
+							imageFile: 'sup/sup_mampar.png', description: ''
 						),
 						Product(
 							title: 'Суп «Мохора»',
-							imageFile: 'sup_moxora.png', description: ''
+							imageFile: 'sup/sup_moxora.png', description: ''
 						),
 						Product(
 							title: 'Суп «Ассорти»',
-							imageFile: 'sup_assorti.png', description: ''
+							imageFile: 'sup/sup_assorti.png', description: ''
 						),
 						Product(
 							title: 'Суп «Крем-суп»',
-							imageFile: 'sup_kremsup.png', description: ''
+							imageFile: 'sup/sup_kremsup.png', description: ''
 						),
 					],
 				),
@@ -518,58 +547,148 @@ class MockProducts {
 						Product(
 				            title: '«Royal Rose»',
 				            description: '(говяжья качалка, тушенная в соусе)',
-				            imageFile: '2_rr.png'
+				            imageFile: '2/2_rr.png'
 				        ),
 						Product(
 							title: '«Дует»',
 							description: '(телятина с курицей под сырным соусом)',
-							imageFile: '2_duet.png'
+							imageFile: '2/2_duet.png'
 						),
 						Product(
 							title: '«Куриная грудка»',
 							description: '(Сочнач фаршированная куриная грудка под соусом бешамел)',
-							imageFile: '2_kurinnaya_grudka.png'
+							imageFile: '2/2_kurinnaya_grudka.png'
 						),
 						Product(
 							title: '«Медалион»',
 							description: '(медалион из телятины)',
-							imageFile: '2_medalion.png'
+							imageFile: '2/2_medalion.png'
 						),
-						// Product(
-						// 	title: '«Каре ягненка»',
-						// 	description: '(каре ягненка с фисташкой)',
-						// 	imageFile: 'default.png'
-						// ),
 						Product(
 							title: '«Мясо по королевский»',
-							imageFile: '2_mysa_po_korolovskiy.png'
+							imageFile: '2/2_mysa_po_korolovskiy.png'
 						),
 						Product(
 							title: '«Корейка с молодой картофелю»',
-							imageFile: '2_koreyka_molodoy_kartofel.png'
+							imageFile: '2/2_koreyka_molodoy_kartofel.png'
 						),
 						Product(
 							title: '«Баранья ножка в пюре»',
-							imageFile: '2_baranya_pyure.png'
+							imageFile: '2/2_baranya_pyure.png'
 						),
 						Product(
 							title: '«Стейк из лосось»',
-							imageFile: '2_steyk_losos.png'
+							imageFile: '2/2_steyk_losos.png'
 						),
 						Product(
 							title: '«Стейк рибай с спаржой»',
-							imageFile: '2_steyk_riboy_sparjoy.png'
+							imageFile: '2/2_steyk_riboy_sparjoy.png'
 						),
 						Product(
 							title: '«Рыбный микс»',
-							imageFile: '2_ribinskiy_miks.png'
+							imageFile: '2/2_ribinskiy_miks.png'
 						),
 					],
 				),
 				CategoryProducts(
-					title: 'Гарнир',
+					title: 'Хлеб ассорти',
+					products: [
+						Product(
+							title: '(черный хлеб, белый хлеб, отрубной хлеб, патыр)',
+							imageFile: 'xleb/xleb.png'
+						),
+					],
+				),
+				CategoryProducts(
+					title: 'Десерт',
+					products: [
+						Product(
+							title: '«Royal Rose» меренговый рулет',
+							imageFile: 'desert/desert_rr.png'
+						),
+						Product(
+							title: '«Royal Rose» чизкейк'
+							imageFile: 'desert/chizkeyk.png'
+						),
+						Product(
+							title: '«Royal Rose» чизкейк'
+							imageFile: 'desert/chizkeyk_klubnichniy.png'
+						),
+						Product(
+							title: '«Royal Rose» чизкейк'
+							imageFile: 'desert/chizkeyk_shokoladniy.png'
+						),
+					],
+				),
+				CategoryProducts(
+					title: 'Напитки (без ограничений)',
+					types: 99,
+					products: [
+			            Product(
+			            	title: 'Сола, фанта, содас газом, без газа, чай, кофе, мохшто, сок)',
+			            	imageFile: 'default.png'
+			            ),
+					],
+				),
+			],
+		),
+		Menu(
+			title: 'Третья  меню',
+			price: '75',
+			imageFile: 'images_3.png',
+			categories: [
+				CategoryProducts(
+					title: 'Холодное',
 					types: 1,
 					products: [
+						Product(
+							title: 'Мясное ассорти',
+							imageFile: 'cold/myasnoy_assorti_2.png'
+						),
+						Product(
+							title: 'Икра красная',
+							imageFile: 'cold/ikra.png'
+						),
+						Product(
+							title: 'Овощное ассорти',
+							imageFile: 'cold/ovoshnoy_assorti.png'
+						),
+						Product(
+							title: 'Ассорти из сыра',
+							imageFile: 'cold/sirniy_assorti_2.png'
+						),
+						Product(
+							title: 'Ассорти из брынзы',
+							imageFile: 'cold/brinza_assorti_2.png'
+						),
+						Product(
+							title: 'Лимон',
+							imageFile: 'cold/limon.png'
+						),
+						Product(
+							title: 'Фаршированная гдудка с шпинатом',
+							imageFile: 'cold/farshirovannaya.png'
+						),
+						Product(
+							title: 'Маринованное ассорти',
+							imageFile: 'cold/marinovannaya_2.png'
+						),
+						Product(
+							title: 'Селедка «необыкновенная»',
+							imageFile: 'cold/seledka.png'
+						),
+						Product(
+							title: 'Фруктовая нарезка ',
+							imageFile: 'cold/fruktovaya_narezka_2.png'
+						),
+						Product(
+							title: 'Рыбное ассорти',
+							imageFile: 'cold/ribniy_assorti.png'
+						),
+						Product(
+							title: 'Суши',
+							imageFile: 'cold/sushi.png'
+						),
 						Product(
 							title: 'Запеченная картошка по деревенски',
 							imageFile: 'default.png'
@@ -589,11 +708,212 @@ class MockProducts {
 					],
 				),
 				CategoryProducts(
+					title: 'Салаты',
+					types: 3,
+					products: [
+						Product(
+							title: 'Салат «Royal Rose»',
+							description: '(Мясо, баклажан, черри, руколла, чили соус)',
+							imageFile: 'salads/salad_royalrose.png'
+						),
+						Product(
+							title: 'Салат «Фишер»',
+							description: '(фетаки, черри, огурцы, апелсин, айсберг, лоллоросса, сок лимона)',
+							imageFile: 'salads/salad_fisher.png'
+						),
+						Product(
+							title: 'Салат «Цезар»',
+							description: '(куриная грудка, айсберг, черри, пармезан, крутоны, соус цезар)',
+							imageFile: 'salads/salad_tsezor.png'
+						),
+						Product(
+							title: 'Салат «Оливье»',
+							description: '(говяжье мясо, картошка, морковь, яйцо, горох, соленные огурцы)',
+							imageFile: 'salads/salad_olivie.png'
+						),
+						Product(
+							title: 'Салат «Французкий»',
+							description: '(мясо, свекла, марковь, капуста, картофель пай, огурцы)',
+							imageFile: 'salads/salad_fransuzkiy.png'
+						),
+						Product(
+							title: 'Салат «Яблочный фонтан»',
+							description: '',
+							imageFile: 'salads/salad_fontan.png'
+						),
+						Product(
+							title: 'Салат «из маринадов»',
+							description: '(говядина, грибы маринов, сол огурчик)',
+							imageFile: 'salads/salad_marinadov.png'
+						),
+						Product(
+							title: 'Салат «Авеню»',
+							description: '(мясо копч, индейка, сыр, колбаса копч, картофель пай, айсберг, соул)',
+							imageFile: 'salads/salad_avenyu.png'
+						),
+						Product(
+							title: 'Салат «Флагман»',
+							description: '(рукола, черри, айсберг, тунец, болгарский, соус)',
+							imageFile: 'salads/salad_flagman.png'
+						),
+						Product(
+							title: 'Салат «Любимый»',
+							description: '(баклажан, помидоручесноку зелень)',
+							imageFile: 'salads/salad_lyubimiy.png'
+						),
+						// Product(
+						// 	title: 'Салат «Восторг»',
+						// 	description: '(мясоггруша;рукола; кедровые орешкы)',
+						// 	imageFile: 'salads/salad_vostorg.png'
+						// ),
+						// Product(
+						// 	title: 'Салат «Морс: кой коктейл»',
+						// 	imageFile: 'salads/salad_mors.png'
+						// ),
+						Product(
+							title: 'Салат «Телятина с пармезаном»',
+							description: '(телятина,рукола, вяленый пом, пармизан, огурец, рикотта)',
+							imageFile: 'salads/salad_telyatina.png'
+						),
+						Product(
+							title: 'Салат «Баклажан с пашотом»',
+							description: '(баклажан, яйцо пашот, коп говядина,руколла, малина,черри пом)',
+							imageFile: 'salads/salad_baklajan.png'
+						),
+						Product(
+							title: 'Салат «Морской бриз»',
+							description: '(огурцы, айсберг, лоларосса, семга, маслиная, криветки, соус песто)',
+							imageFile: 'salads/salad_morskoy.png'
+						),
+						Product(
+							title: 'Салат «Фета с авакадо»',
+							description: '(фета, авакадо, телятина, помидор, рукола, соус пармезан)',
+							imageFile: 'salads/salad_feta.png'
+						),
+						Product(
+							title: 'Салат «Микс»',
+							description: '(каренное овоши с говалиной) (телятина, броколи, черри, болгарский, рукола, лук,соус овошной)',
+							imageFile: 'salads/salad_miks.png'
+						),
+						Product(
+							title: 'Салат «Запечённая семга»',
+							description: '(семга свежий, черри, рукола, лолароса,тунеи, соус маракуя)',
+							imageFile: 'salads/salad_semga.png'
+						),
+						Product(
+							title: 'Салат «Телятина с руколой»',
+							description: '(телятина,пармизан, рукола, черри, кедровый орех балзамический крем)',
+							imageFile: 'salads/salad_telyatina_rukoloy.png'
+						),
+					],
+				),
+				CategoryProducts(
+					title: 'Горячая закуска',
+					products: [
+						Product(
+							title: 'Сомса',
+							description: '(мясной самса и овошной самса, соус)',
+							imageFile: 'hot/somsa.png'
+						),
+						Product(
+							title: 'Долма',
+							imageFile: 'hot/dolma.png'
+						),
+						// Product(title: 'Жулень', imageFile: 'default.png'),
+						// Product(title: 'Сочный барашек', imageFile: 'default.png'),
+						// Product(title: 'Шох', imageFile: 'default.png'),
+					],
+				),
+				CategoryProducts(
+					title: 'Первое блюдо',
+					types: 1,
+					products: [
+						Product(
+							title: 'Суп «Royal Rose»',
+							imageFile: 'sup/sup_rr.png'
+						),
+						Product(
+							title: 'Суп «Мароканский»',
+							imageFile: 'sup/sup_marokanskiy.png', description: ''
+						),
+						Product(
+							title: 'Суп «с фрикадельками и лапшой»',
+							imageFile: 'sup/sup_frikadelka.png', description: ''
+						),
+						Product(
+							title: 'Суп «Мампар»',
+							imageFile: 'sup/sup_mampar.png', description: ''
+						),
+						Product(
+							title: 'Суп «Мохора»',
+							imageFile: 'sup/sup_moxora.png', description: ''
+						),
+						Product(
+							title: 'Суп «Ассорти»',
+							imageFile: 'sup/sup_assorti.png', description: ''
+						),
+						Product(
+							title: 'Суп «Крем-суп»',
+							imageFile: 'sup/sup_kremsup.png', description: ''
+						),
+					],
+				),
+				CategoryProducts(
+					title: 'Второе блюда',
+					types: 1,
+					products: [
+						Product(
+				            title: '«Royal Rose»',
+				            description: '(говяжья качалка, тушенная в соусе)',
+				            imageFile: '2/2_rr.png'
+				        ),
+						Product(
+							title: '«Дует»',
+							description: '(телятина с курицей под сырным соусом)',
+							imageFile: '2/2_duet.png'
+						),
+						Product(
+							title: '«Куриная грудка»',
+							description: '(Сочнач фаршированная куриная грудка под соусом бешамел)',
+							imageFile: '2/2_kurinnaya_grudka.png'
+						),
+						Product(
+							title: '«Медалион»',
+							description: '(медалион из телятины)',
+							imageFile: '2/2_medalion.png'
+						),
+						Product(
+							title: '«Мясо по королевский»',
+							imageFile: '2/2_mysa_po_korolovskiy.png'
+						),
+						Product(
+							title: '«Корейка с молодой картофелю»',
+							imageFile: '2/2_koreyka_molodoy_kartofel.png'
+						),
+						Product(
+							title: '«Баранья ножка в пюре»',
+							imageFile: '2/2_baranya_pyure.png'
+						),
+						Product(
+							title: '«Стейк из лосось»',
+							imageFile: '2/2_steyk_losos.png'
+						),
+						Product(
+							title: '«Стейк рибай с спаржой»',
+							imageFile: '2/2_steyk_riboy_sparjoy.png'
+						),
+						Product(
+							title: '«Рыбный микс»',
+							imageFile: '2/2_ribinskiy_miks.png'
+						),
+					],
+				),
+				CategoryProducts(
 					title: 'Хлеб ассорти',
 					products: [
 						Product(
 							title: '(черный хлеб, белый хлеб, отрубной хлеб, патыр)',
-							imageFile: 'Хлебассорти.png'
+							imageFile: 'xleb/xleb.png'
 						),
 					],
 				),
@@ -602,7 +922,19 @@ class MockProducts {
 					products: [
 						Product(
 							title: '«Royal Rose» меренговый рулет',
-							imageFile: 'default.png'
+							imageFile: 'desert/desert_rr.png'
+						),
+						Product(
+							title: '«Royal Rose» чизкейк'
+							imageFile: 'desert/chizkeyk.png'
+						),
+						Product(
+							title: '«Royal Rose» чизкейк'
+							imageFile: 'desert/chizkeyk_klubnichniy.png'
+						),
+						Product(
+							title: '«Royal Rose» чизкейк'
+							imageFile: 'desert/chizkeyk_shokoladniy.png'
 						),
 					],
 				),
