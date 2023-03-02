@@ -78,7 +78,7 @@ class MockProducts {
 						Product(
 							title: 'Салат «Royal Rose»',
 							description: '(Мясо, баклажан, черри, руколла, чили соус)',
-							imageFile: 'salads/salad_royalrose.png'
+							imageFile: 'salads/salad_rr.png'
 						),
 						Product(
 							title: 'Салат «Фишер»',
@@ -396,7 +396,7 @@ class MockProducts {
 						Product(
 							title: 'Салат «Royal Rose»',
 							description: '(Мясо, баклажан, черри, руколла, чили соус)',
-							imageFile: 'salads/salad_royalrose.png'
+							imageFile: 'salads/salad_rr.png'
 						),
 						Product(
 							title: 'Салат «Фишер»',
