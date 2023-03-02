@@ -17,7 +17,7 @@ class MockProducts {
 						Product(
 							title: 'Салат «Royal Rose»',
 							description: '(Мясо, баклажан, черри, руколла, чили соус)',
-							imageFile: 'salad_royalrose.jpg'
+							imageFile: 'salad_royalrose.png'
 						),
 						Product(
 							title: 'Салат «Фишер»',
@@ -104,7 +104,7 @@ class MockProducts {
 						Product(
 				            title: '«Royal Rose»',
 				            description: '(говяжья качалка, тушенная в соусе)',
-				            imageFile: '2_rr.jpg'
+				            imageFile: 'sup_rr.jpg'
 				        ),
 						Product(
 							title: '«Дует»',
@@ -171,7 +171,7 @@ class MockProducts {
 			],
 		),
 		Menu(
-			title: 'Первое меню',
+			title: 'Второе меню',
 			price: '52',
 			imageFile: 'images_2.png',
 			categories: [
@@ -356,7 +356,7 @@ class MockProducts {
 			],
 		),
 		Menu(
-			title: 'Первое меню',
+			title: 'Третье меню',
 			price: '75',
 			imageFile: 'images_1.png',
 			categories: [
