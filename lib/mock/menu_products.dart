@@ -666,7 +666,7 @@ class MockProducts {
 							imageFile: 'cold/limon.png'
 						),
 						Product(
-							title: 'Фаршированная гдудка с шпинатом',
+							title: 'Фаршированная грудка с шпинатом',
 							imageFile: 'cold/farshirovannaya.png'
 						),
 						Product(
@@ -714,7 +714,7 @@ class MockProducts {
 						Product(
 							title: 'Салат «Royal Rose»',
 							description: '(Мясо, баклажан, черри, руколла, чили соус)',
-							imageFile: 'salads/salad_royalrose.png'
+							imageFile: 'salads/salad_rr.png'
 						),
 						Product(
 							title: 'Салат «Фишер»',
@@ -761,15 +761,16 @@ class MockProducts {
 							description: '(баклажан, помидоручесноку зелень)',
 							imageFile: 'salads/salad_lyubimiy.png'
 						),
-						// Product(
-						// 	title: 'Салат «Восторг»',
-						// 	description: '(мясоггруша;рукола; кедровые орешкы)',
-						// 	imageFile: 'salads/salad_vostorg.png'
-						// ),
-						// Product(
-						// 	title: 'Салат «Морс: кой коктейл»',
-						// 	imageFile: 'salads/salad_mors.png'
-						// ),
+						Product(
+							title: 'Салат «Восторг»',
+							description: '(мясоггруша;рукола; кедровые орешкы)',
+							imageFile: 'salads/salad_vostorg.png'
+						),
+						Product(
+							title: 'Салат «Морс: кой коктейл»',
+							description: '(малосольнаясемга, вяленый помидор, лабне, рукола, айзберг, лимон соус)',
+							imageFile: 'salads/salad_morskoy_kokteyl.png'
+						),
 						Product(
 							title: 'Салат «Телятина с пармезаном»',
 							description: '(телятина,рукола, вяленый пом, пармизан, огурец, рикотта)',
@@ -788,18 +789,18 @@ class MockProducts {
 						Product(
 							title: 'Салат «Фета с авакадо»',
 							description: '(фета, авакадо, телятина, помидор, рукола, соус пармезан)',
-							imageFile: 'salads/salad_feta.png'
+							imageFile: 'salads/salad_s_avakadoy.png'
 						),
 						Product(
 							title: 'Салат «Микс»',
 							description: '(каренное овоши с говалиной) (телятина, броколи, черри, болгарский, рукола, лук,соус овошной)',
 							imageFile: 'salads/salad_miks.png'
 						),
-						Product(
-							title: 'Салат «Запечённая семга»',
-							description: '(семга свежий, черри, рукола, лолароса,тунеи, соус маракуя)',
-							imageFile: 'salads/salad_semga.png'
-						),
+						// Product(
+						// 	title: 'Салат «Запечённая семга»',
+						// 	description: '(семга свежий, черри, рукола, лолароса,тунеи, соус маракуя)',
+						// 	imageFile: 'salads/salad_semga.png'
+						// ),
 						Product(
 							title: 'Салат «Телятина с руколой»',
 							description: '(телятина,пармизан, рукола, черри, кедровый орех балзамический крем)',
