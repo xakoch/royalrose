@@ -115,60 +115,6 @@ class MockProducts {
 							description: '(мясо копч, индейка, сыр, колбаса копч, картофель пай, айсберг, соул)',
 							imageFile: 'salads/salad_avenyu.png'
 						),
-						Product(
-							title: 'Салат «Флагман»',
-							description: '(рукола, черри, айсберг, тунец, болгарский, соус)',
-							imageFile: 'salads/salad_flagman.png'
-						),
-						Product(
-							title: 'Салат «Любимый»',
-							description: '(баклажан, помидоручесноку зелень)',
-							imageFile: 'salads/salad_lyubimiy.png'
-						),
-						// Product(
-						// 	title: 'Салат «Восторг»',
-						// 	description: '(мясоггруша;рукола; кедровые орешкы)',
-						// 	imageFile: 'salads/salad_vostorg.png'
-						// ),
-						// Product(
-						// 	title: 'Салат «Морс: кой коктейл»',
-						// 	imageFile: 'salads/salad_mors.png'
-						// ),
-						Product(
-							title: 'Салат «Телятина с пармезаном»',
-							description: '(телятина,рукола, вяленый пом, пармизан, огурец, рикотта)',
-							imageFile: 'salads/salad_telyatina.png'
-						),
-						Product(
-							title: 'Салат «Баклажан с пашотом»',
-							description: '(баклажан, яйцо пашот, коп говядина,руколла, малина,черри пом)',
-							imageFile: 'salads/salad_baklajan.png'
-						),
-						Product(
-							title: 'Салат «Морской бриз»',
-							description: '(огурцы, айсберг, лоларосса, семга, маслиная, криветки, соус песто)',
-							imageFile: 'salads/salad_morskoy.png'
-						),
-						Product(
-							title: 'Салат «Фета с авакадо»',
-							description: '(фета, авакадо, телятина, помидор, рукола, соус пармезан)',
-							imageFile: 'salads/salad_feta.png'
-						),
-						Product(
-							title: 'Салат «Микс»',
-							description: '(каренное овоши с говалиной) (телятина, броколи, черри, болгарский, рукола, лук,соус овошной)',
-							imageFile: 'salads/salad_miks.png'
-						),
-						Product(
-							title: 'Салат «Запечённая семга»',
-							description: '(семга свежий, черри, рукола, лолароса,тунеи, соус маракуя)',
-							imageFile: 'salads/salad_semga.png'
-						),
-						Product(
-							title: 'Салат «Телятина с руколой»',
-							description: '(телятина,пармизан, рукола, черри, кедровый орех балзамический крем)',
-							imageFile: 'salads/salad_telyatina_rukoloy.png'
-						),
 					],
 				),
 				CategoryProducts(
@@ -250,26 +196,6 @@ class MockProducts {
 							title: '«Мясо по королевский»',
 							imageFile: '2/2_mysa_po_korolovskiy.png'
 						),
-						Product(
-							title: '«Корейка с молодой картофелю»',
-							imageFile: '2/2_koreyka_molodoy_kartofel.png'
-						),
-						Product(
-							title: '«Баранья ножка в пюре»',
-							imageFile: '2/2_baranya_pyure.png'
-						),
-						Product(
-							title: '«Стейк из лосось»',
-							imageFile: '2/2_steyk_losos.png'
-						),
-						Product(
-							title: '«Стейк рибай с спаржой»',
-							imageFile: '2/2_steyk_riboy_sparjoy.png'
-						),
-						Product(
-							title: '«Рыбный микс»',
-							imageFile: '2/2_ribinskiy_miks.png'
-						),
 					],
 				),
 				CategoryProducts(
@@ -287,14 +213,6 @@ class MockProducts {
 						Product(
 							title: '«Royal Rose» меренговый рулет',
 							imageFile: 'desert/desert_rr.png'
-						),
-						Product(
-							title: '«Royal Rose» чизкейк'
-							imageFile: 'desert/chizkeyk.png'
-						),
-						Product(
-							title: '«Royal Rose» чизкейк'
-							imageFile: 'desert/chizkeyk_klubnichniy.png'
 						),
 						Product(
 							title: '«Royal Rose» чизкейк'
@@ -678,7 +596,7 @@ class MockProducts {
 							imageFile: 'cold/seledka.png'
 						),
 						Product(
-							title: 'Фруктовая нарезка ',
+							title: 'Фруктовая нарезка',
 							imageFile: 'cold/fruktovaya_narezka_2.png'
 						),
 						Product(
