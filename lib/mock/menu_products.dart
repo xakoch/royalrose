@@ -51,7 +51,7 @@ class MockProducts {
 						),
 						Product(
 							title: 'Фруктовая нарезка',
-							imageFile: 'default.png'
+							imageFile: 'cold/fruktovaya_narezka_2.png'
 						),
 						Product(
 							title: 'Запеченная картошка по деревенски',
@@ -59,7 +59,7 @@ class MockProducts {
 						),
 						Product(
 							title: 'Овощи',
-							imageFile: 'default.png'
+							imageFile: 'cold/ovoshnoy_assorti.png'
 						),
 						Product(
 							title: 'Рис, кукуруза, горошок',
@@ -215,7 +215,7 @@ class MockProducts {
 							imageFile: 'desert/desert_rr.png'
 						),
 						Product(
-							title: '«Royal Rose» чизкейк'
+							title: '«Royal Rose» чизкейк',
 							imageFile: 'desert/chizkeyk_shokoladniy.png'
 						),
 					],
@@ -279,7 +279,7 @@ class MockProducts {
 						),
 						Product(
 							title: 'Фруктовая нарезка',
-							imageFile: 'default.png'
+							imageFile: 'cold/fruktovaya_narezka_2.png'
 						),
 						Product(
 							title: 'Рыбное ассорти',
@@ -295,7 +295,7 @@ class MockProducts {
 						),
 						Product(
 							title: 'Овощи',
-							imageFile: 'default.png'
+							imageFile: 'cold/ovoshnoy_assorti.png'
 						),
 						Product(
 							title: 'Рис, кукуруза, горошок',
@@ -525,15 +525,15 @@ class MockProducts {
 							imageFile: 'desert/desert_rr.png'
 						),
 						Product(
-							title: '«Royal Rose» чизкейк'
+							title: '«Royal Rose» чизкейк',
 							imageFile: 'desert/chizkeyk.png'
 						),
 						Product(
-							title: '«Royal Rose» чизкейк'
+							title: '«Royal Rose» чизкейк',
 							imageFile: 'desert/chizkeyk_klubnichniy.png'
 						),
 						Product(
-							title: '«Royal Rose» чизкейк'
+							title: '«Royal Rose» чизкейк',
 							imageFile: 'desert/chizkeyk_shokoladniy.png'
 						),
 					],
@@ -613,7 +613,7 @@ class MockProducts {
 						),
 						Product(
 							title: 'Овощи',
-							imageFile: 'default.png'
+							imageFile: 'cold/ovoshnoy_assorti.png'
 						),
 						Product(
 							title: 'Рис, кукуруза, горошок',
@@ -844,15 +844,15 @@ class MockProducts {
 							imageFile: 'desert/desert_rr.png'
 						),
 						Product(
-							title: '«Royal Rose» чизкейк'
+							title: '«Royal Rose» чизкейк',
 							imageFile: 'desert/chizkeyk.png'
 						),
 						Product(
-							title: '«Royal Rose» чизкейк'
+							title: '«Royal Rose» чизкейк',
 							imageFile: 'desert/chizkeyk_klubnichniy.png'
 						),
 						Product(
-							title: '«Royal Rose» чизкейк'
+							title: '«Royal Rose» чизкейк',
 							imageFile: 'desert/chizkeyk_shokoladniy.png'
 						),
 					],
